@@ -1,0 +1,17 @@
+﻿ // 
+            // ugcChooser
+            // 
+            this.ugcChooser.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.LightGray;
+            this.ugcChooser.DisplayLayout.MaxColScrollRegions = 1;
+            this.ugcChooser.DisplayLayout.MaxRowScrollRegions = 1;
+            this.ugcChooser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ugcChooser.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ugcChooser.Location = new System.Drawing.Point(0, 0);
+            this.ugcChooser.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.ugcChooser.Name = "ugcChooser";
+            this.ugcChooser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ugcChooser.Size = new System.Drawing.Size(238, 490);
+            this.ugcChooser.SourceGrid = this.ugSWARTReport;
+            this.ugcChooser.StyleLibraryName = "";
+            this.ugcChooser.StyleSetName = "";
+            this.ugcChooser.TabIndex = 14;

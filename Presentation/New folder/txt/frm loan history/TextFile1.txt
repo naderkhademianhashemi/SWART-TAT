@@ -1,0 +1,15 @@
+﻿            this.chart.ChartAreas.Add(chartArea1);
+
+            this.chart.Legends.Add(legend1);
+            this.chart.Legends.Add(legend2);
+
+            this.chart.Series.Add(series1);
+
+             this.chart.UI.Toolbar.AllowMouseMoving = false;
+            this.chart.UI.Toolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(170)))), ((int)(((byte)(126)))));
+            this.chart.UI.Toolbar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(188)))), ((int)(((byte)(147)))));
+            this.chart.UI.Toolbar.BorderSkin.FrameBackColor = System.Drawing.Color.SteelBlue;
+            this.chart.UI.Toolbar.BorderSkin.FrameBackGradientEndColor = System.Drawing.Color.LightBlue;
+            this.chart.UI.Toolbar.BorderSkin.PageColor = System.Drawing.Color.Transparent;
+            this.chart.UI.Toolbar.BorderSkin.SkinStyle = Dundas.Charting.WinControl.BorderSkinStyle.Emboss;
+            this.chart.UI.Toolbar.Enabled = true;

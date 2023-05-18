@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4834B798-C761-4B96-93F8-5B4F380B66AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>D:\Sawrt_Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Swart 3.1.18</ProductName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.3.18.3</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SWART-RUN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\SWART-RUN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Presentation.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Presentation.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Presentation.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C1700CCE665E498B4F4F003E37F28385935898F8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Presentation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC\ADODB\7.0.3300.0__b03f5f7f11d50a3a\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.76.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EN bank\Apps DB EN\SWART-EN UI Infra\SWART-EN-1400-08\SWART-RUN\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.8.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b">
+      <HintPath>..\SWART_TAT_DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DundasWinChart, Version=6.0.0.1720, Culture=neutral, PublicKeyToken=a4c03dce5db22406, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Dundas Software\Charting\WinControlVS2008\bin\DundasWinChart.dll</HintPath>
+    </Reference>
+    <Reference Include="DxERMS, Version=1.1.5674.22739, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART-RUN\DxERMS.dll</HintPath>
+    </Reference>
+    <Reference Include="ERMSLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART-RUN\ERMSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win">
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FxERMSF, Version=1.1.4468.28659, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART-RUN\FxERMSF.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Shared.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.Misc.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.SupportDialogs.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.SupportDialogs.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinDataSource.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinEditors.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinGrid.DocumentExport.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinGrid.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinPrintPreviewDialog.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinToolbars.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinTree.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics3.Win.UltraWinGrid.ExcelExport.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v4, Version=4.0.50.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="LxERMS, Version=1.1.5674.22739, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART-RUN\LxERMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MxERMS, Version=1.1.5653.24910, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\SWART-RUN\MxERMS.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MyLibrary.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\MyLibrary.Helper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PersianTools, Version=2.5.50.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\PersianTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Utilize, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Utilize.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bubble\frmRangeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bubble\frmRangeReport.Designer.cs">
+      <DependentUpon>frmRangeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\chart win\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\chart win\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart2\frmChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Chart2\frmChart.designer.cs">
+      <DependentUpon>frmChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\frmReportChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\frmReportChart.designer.cs">
+      <DependentUpon>frmReportChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ChartDS.cs" />
+    <Compile Include="DAL\GapDS.cs" />
+    <Compile Include="DAL\LcrDS.cs" />
+    <Compile Include="DAL\LoanDS.cs" />
+    <Compile Include="DAL\ReportDS.cs" />
+    <Compile Include="Excel\frmExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\frmExcel.Designer.cs">
+      <DependentUpon>frmExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM Routine\frmRoutine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM Routine\frmRoutine.Designer.cs">
+      <DependentUpon>frmRoutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gap\frmGapDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gap\frmGapDetails.designer.cs">
+      <DependentUpon>frmGapDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gap\frmGapEn\frmGapR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gap\frmGapEn\frmGapR.designer.cs">
+      <DependentUpon>frmGapR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\frmGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\frmGrid.Designer.cs">
+      <DependentUpon>frmGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\frmHistoricalLoanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan\frmHistoricalLoanReport.Designer.cs">
+      <DependentUpon>frmHistoricalLoanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\frmLoanCashFlowPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan\frmLoanCashFlowPayment.Designer.cs">
+      <DependentUpon>frmLoanCashFlowPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\frmNdrPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\frmNdrPrint.Designer.cs">
+      <DependentUpon>frmNdrPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\MyControls\TreeViewEx\TreeViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Public\MyControls\TreeViewEx\TreeViewEx.Designer.cs">
+      <DependentUpon>TreeViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSRC\MSG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RSRC\Setting.Designer.cs" />
+    <Compile Include="LCR\frmLCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCR\frmLCR.designer.cs">
+      <DependentUpon>frmLCR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB\frmTBM\frmTBM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB\frmTBM\frmTBM.designer.cs">
+      <DependentUpon>frmTBM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree View\frmTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tree View\frmTree.Designer.cs">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree View\frmWinTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tree View\frmWinTree.Designer.cs">
+      <DependentUpon>frmWinTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Print\DataGridViewPrinter.cs" />
+    <Compile Include="Util\Print\Printer.cs" />
+    <Compile Include="Util\Xcl\Export.cs" />
+    <Compile Include="Util\frmError\frmErrorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frmError\frmErrorBox.designer.cs">
+      <DependentUpon>frmErrorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\frmInput\frmInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frmMSG\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\Helper.cs" />
+    <Compile Include="Util\Xcl\Import.cs" />
+    <Compile Include="Util\Routines.cs" />
+    <Compile Include="Util\Xcl\Xcl.cs" />
+    <EmbeddedResource Include="Bubble\frmRangeReport.resx">
+      <DependentUpon>frmRangeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\chart win\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Chart2\frmChart.resx">
+      <DependentUpon>frmChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\frmReportChart.resx">
+      <DependentUpon>frmReportChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\frmExcel.resx">
+      <DependentUpon>frmExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM Routine\frmRoutine.resx">
+      <DependentUpon>frmRoutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gap\frmGapDetails.resx">
+      <DependentUpon>frmGapDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gap\frmGapEn\frmGapR.resx">
+      <DependentUpon>frmGapR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\frmGrid.resx">
+      <DependentUpon>frmGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\frmHistoricalLoanReport.resx">
+      <DependentUpon>frmHistoricalLoanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\frmLoanCashFlowPayment.resx">
+      <DependentUpon>frmLoanCashFlowPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\frmNdrPrint.resx">
+      <DependentUpon>frmNdrPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\MyControls\TreeViewEx\TreeViewEx.resx">
+      <DependentUpon>TreeViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSRC\MSG.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MSG.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSRC\Setting.resx" />
+    <EmbeddedResource Include="LCR\frmLCR.resx">
+      <DependentUpon>frmLCR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB\frmTBM\frmTBM.resx">
+      <DependentUpon>frmTBM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree View\frmTree.resx">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree View\frmWinTree.resx">
+      <DependentUpon>frmWinTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frmError\frmErrorBox.resx">
+      <DependentUpon>frmErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frmInput\frmInputBox.resx">
+      <DependentUpon>frmInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frmMSG\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\DAL.DepositDataSetTableAdapters.StateTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.DepositDataSetTableAdapters.VDepositReportTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Contract_Major_TypeTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Contract_StatusTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Contract_TypeTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Contract_type_groupsTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Counterparty_TypeTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Customer_GroupTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.Economic_SectorTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.OrganizationTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.StateTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL.LoanDataSetTableAdapters.VLReportTableAdapter.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="txt\frm acc gl br\TextFile1.txt" />
+    <Content Include="txt\frm acc gl\TextFile1.txt" />
+    <Content Include="txt\frm loan history\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

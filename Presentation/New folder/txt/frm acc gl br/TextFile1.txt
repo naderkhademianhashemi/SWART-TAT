@@ -1,0 +1,51 @@
+﻿this.ultraGridColumnChooser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraGridColumnChooser1.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ultraGridColumnChooser1.Location = new System.Drawing.Point(0, 0);
+            this.ultraGridColumnChooser1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ultraGridColumnChooser1.Name = "ultraGridColumnChooser1";
+            this.ultraGridColumnChooser1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ultraGridColumnChooser1.Size = new System.Drawing.Size(235, 329);
+            this.ultraGridColumnChooser1.SourceGrid = this.ugSWARTReport_Trend;
+            this.ultraGridColumnChooser1.StyleLibraryName = "";
+            this.ultraGridColumnChooser1.StyleSetName = "";
+            this.ultraGridColumnChooser1.TabIndex = 15;
+// 
+            // ugcChooser
+            // 
+            appearance7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(217)))), ((int)(((byte)(201)))));
+            appearance7.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(44)))), ((int)(((byte)(24)))));
+            appearance7.BackGradientStyle = .GradientStyle.ForwardDiagonal;
+            this.ugcChooser.DisplayLayout.Appearance = appearance7;
+            this.ugcChooser.DisplayLayout.AutoFitStyle = .UltraWinGrid.AutoFitStyle.ResizeAllColumns;
+            this.ugcChooser.DisplayLayout.BorderStyle = .UIElementBorderStyle.Rounded1;
+            this.ugcChooser.DisplayLayout.CaptionVisible = .DefaultableBoolean.False;
+            this.ugcChooser.DisplayLayout.MaxColScrollRegions = 1;
+            this.ugcChooser.DisplayLayout.MaxRowScrollRegions = 1;
+            this.ugcChooser.DisplayLayout.Override.AllowColMoving = .UltraWinGrid.AllowColMoving.NotAllowed;
+            this.ugcChooser.DisplayLayout.Override.AllowColSizing = .UltraWinGrid.AllowColSizing.None;
+            this.ugcChooser.DisplayLayout.Override.AllowRowLayoutCellSizing = .UltraWinGrid.RowLayoutSizing.None;
+            this.ugcChooser.DisplayLayout.Override.AllowRowLayoutLabelSizing = .UltraWinGrid.RowLayoutSizing.None;
+            this.ugcChooser.DisplayLayout.Override.CellClickAction = .UltraWinGrid.CellClickAction.RowSelect;
+            this.ugcChooser.DisplayLayout.Override.CellPadding = 2;
+            this.ugcChooser.DisplayLayout.Override.ExpansionIndicator = .UltraWinGrid.ShowExpansionIndicator.Never;
+            this.ugcChooser.DisplayLayout.Override.HeaderClickAction = .UltraWinGrid.HeaderClickAction.Select;
+            this.ugcChooser.DisplayLayout.Override.RowSelectors = .DefaultableBoolean.False;
+            this.ugcChooser.DisplayLayout.Override.RowSizing = .UltraWinGrid.RowSizing.AutoFixed;
+            this.ugcChooser.DisplayLayout.Override.SelectTypeCell = .UltraWinGrid.SelectType.None;
+            this.ugcChooser.DisplayLayout.Override.SelectTypeCol = .UltraWinGrid.SelectType.None;
+            this.ugcChooser.DisplayLayout.Override.SelectTypeRow = .UltraWinGrid.SelectType.None;
+            this.ugcChooser.DisplayLayout.RowConnectorStyle = .UltraWinGrid.RowConnectorStyle.None;
+            this.ugcChooser.DisplayLayout.ScrollBounds = .UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.ugcChooser.DisplayLayout.ScrollStyle = .UltraWinGrid.ScrollStyle.Immediate;
+            this.ugcChooser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ugcChooser.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ugcChooser.Location = new System.Drawing.Point(0, 0);
+            this.ugcChooser.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ugcChooser.Name = "ugcChooser";
+            this.ugcChooser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ugcChooser.Size = new System.Drawing.Size(315, 464);
+            this.ugcChooser.SourceGrid = this.ugSWARTReport;
+            this.ugcChooser.StyleLibraryName = "";
+            this.ugcChooser.StyleSetName = "";
+            this.ugcChooser.TabIndex = 15;
+

@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42E076F9-131B-4887-8385-34E1B1BA502A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Utilize</RootNamespace>
+    <AssemblyName>Utilize</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SWART-RUN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\SWART-RUN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Utilize.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Utilize.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveDatabaseSoftware.ActiveQueryBuilder, Version=1.16.0.339, Culture=neutral, PublicKeyToken=3cbcbcc9bf57ecde, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\ActiveDatabaseSoftware.ActiveQueryBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveDatabaseSoftware.EventMetadataProvider, Version=1.16.0.339, Culture=neutral, PublicKeyToken=3cbcbcc9bf57ecde, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\ActiveDatabaseSoftware.EventMetadataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveDatabaseSoftware.MSSQLMetadataProvider, Version=1.16.0.339, Culture=neutral, PublicKeyToken=3cbcbcc9bf57ecde, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\ActiveDatabaseSoftware.MSSQLMetadataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlF">
+      <HintPath>..\SWART_TAT_DLL\ControlF.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.8.0.0, Culture=neutral, PublicKeyToken=e116d99a00eca71b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DundasWinChart, Version=6.0.0.1720, Culture=neutral, PublicKeyToken=a4c03dce5db22406, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Dundas Software\Charting\WinControlVS2008\bin\DundasWinChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\..\..\SWART-TAT\SWART-RUN\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Documents.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Documents.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Shared.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.Misc.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.SupportDialogs.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.SupportDialogs.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinCalcManager.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v10.3.FormulaBuilder, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinCalcManager.v10.3.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinChart.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinDataSource.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinEditors.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGauge.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinGauge.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinGrid.DocumentExport.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinGrid.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinMaskedEdit.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinPrintPreviewDialog.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinStatusBar.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinTabControl.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinToolbars.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.UltraWinTree.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics2.Win.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics3.Excel.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics3.Excel.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Infragistics3.Win.UltraWinGrid.ExcelExport.v10.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.ButtonBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.CalendarCombo.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.ExplorerBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.FilterEditor.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.Ribbon.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.Schedule.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.TimeLine.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Library, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Library.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Math, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MyLibrary.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\MyLibrary.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLibrary.WIN, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\MyLibrary.WIN.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianTools, Version=2.5.50.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\PersianTools.dll</HintPath>
+    </Reference>
+    <Reference Include="RKLib.ExportData">
+      <HintPath>..\SWART_TAT_DLL\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core, Version=6.102.0.34, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=6.102.0.34, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Grid.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=6.102.0.34, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Grid.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows.XmlSerializers, Version=7.103.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Grid.Windows.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=6.102.0.34, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=6.102.0.34, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SWART_TAT_DLL\Syncfusion.Shared.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Company\CButton.Designer.cs">
+      <DependentUpon>CButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CComboCox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Company\CGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Company\CListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Company\EnumHelper.cs" />
+    <Compile Include="Company\frmLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\frmLogo.Designer.cs">
+      <DependentUpon>frmLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\SWART_TAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\SWART_TAT.Designer.cs">
+      <DependentUpon>SWART_TAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\TabCSwart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Company\TabCSwart.Designer.cs">
+      <DependentUpon>TabCSwart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\Utility_Utilize.cs" />
+    <Compile Include="Excel\XmlExcelHelper.cs" />
+    <Compile Include="Grid\DgvColumnMerge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\DgvColumnMerge.Designer.cs">
+      <DependentUpon>DgvColumnMerge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\SpannedDataGridView\DataGridViewCellExHelper.cs" />
+    <Compile Include="Grid\SpannedDataGridView\DataGridViewHelper.cs" />
+    <Compile Include="Grid\SpannedDataGridView\DataGridViewImageCellEx.cs" />
+    <Compile Include="Grid\SpannedDataGridView\DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="Grid\SpannedDataGridView\DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\SpannedDataGridView\DemoForm.designer.cs">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\SpannedDataGridView\ISpannedCell.cs" />
+    <Compile Include="Helper\DataTableHelper.cs" />
+    <Compile Include="Helper\EnumHelper.cs" />
+    <Compile Include="Excel\frmGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\frmGrid.Designer.cs">
+      <DependentUpon>frmGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\MyWorkSheet.cs" />
+    <Compile Include="Excel\SaveDataInExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Excel\SaveDataInExcel.Designer.cs">
+      <DependentUpon>SaveDataInExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ExceptionHelper.cs" />
+    <Compile Include="Helper\ExHelper.cs" />
+    <Compile Include="frmInputText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputText.Designer.cs">
+      <DependentUpon>frmInputText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIranMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIranMap.Designer.cs">
+      <DependentUpon>frmIranMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowSelectionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowSelectionItem.Designer.cs">
+      <DependentUpon>frmShowSelectionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQLSettingConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQLSettingConnection.Designer.cs">
+      <DependentUpon>frmSQLSettingConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaiting.Designer.cs">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\GeneralHelper.cs" />
+    <Compile Include="Grid\frmAddGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\frmAddGroups.Designer.cs">
+      <DependentUpon>frmAddGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\frmDataBining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grid\frmDataBining.Designer.cs">
+      <DependentUpon>frmDataBining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\Grid_V3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Grid_V3.Designer.cs">
+      <DependentUpon>Grid_V3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\MyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\MyGrid_V2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\MyGrid_V2.Designer.cs">
+      <DependentUpon>MyGrid_V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingClass.cs" />
+    <Compile Include="Helper\LocalHelper.cs" />
+    <Compile Include="Maps\IranMap\IranMap.cs" />
+    <Compile Include="Maps\IranMap\IranMapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\IranMap\IranMapControl.Designer.cs">
+      <DependentUpon>IranMapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\IranMap\MapInfo.cs" />
+    <Compile Include="mngConnectionring.cs" />
+    <Compile Include="MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pdf\SaveDataInPdf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pdf\SaveDataInPdf.Designer.cs">
+      <DependentUpon>SaveDataInPdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pdf\UltraGridDocumentExporter.cs" />
+    <Compile Include="ProgressBox\frmUtProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBox\frmUtProgress.designer.cs">
+      <DependentUpon>frmUtProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBox\UtProgressBox.cs" />
+    <Compile Include="Report\frmSelectColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmSelectColumn.Designer.cs">
+      <DependentUpon>frmSelectColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UCChart.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\UCChart.Designer.cs">
+      <DependentUpon>UCChart.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\UCFilteringMini.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UCFilteringMini.Designer.cs">
+      <DependentUpon>UCFilteringMini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SelectColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\SelectColumn.Designer.cs">
+      <DependentUpon>SelectColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UCFSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UCFSingle.Designer.cs">
+      <DependentUpon>UCFSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UCSearchFiltering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UCSearchFiltering.Designer.cs">
+      <DependentUpon>UCSearchFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Routines.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveDataTable.cs" />
+    <Compile Include="Report\UCFiltering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\UCFiltering.Designer.cs">
+      <DependentUpon>UCFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\XMLHelper.cs" />
+    <Compile Include="SpinningProgress\UtSpinningProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpinningProgress\UtSpinningProgress.designer.cs">
+      <DependentUpon>UtSpinningProgress.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Company\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CButton.resx">
+      <DependentUpon>CButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CComboCox.resx">
+      <DependentUpon>CComboCox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CGroupBox.resx">
+      <DependentUpon>CGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CListView.resx">
+      <DependentUpon>CListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\frmLogo.resx">
+      <DependentUpon>frmLogo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\SWART_TAT.resx">
+      <DependentUpon>SWART_TAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\TabCSwart.resx">
+      <DependentUpon>TabCSwart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\frmGrid.resx">
+      <DependentUpon>frmGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\SaveDataInExcel.resx">
+      <DependentUpon>SaveDataInExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputText.resx">
+      <DependentUpon>frmInputText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIranMap.resx">
+      <DependentUpon>frmIranMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowSelectionItem.resx">
+      <DependentUpon>frmShowSelectionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLSettingConnection.resx">
+      <DependentUpon>frmSQLSettingConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaiting.resx">
+      <DependentUpon>frmWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\DgvColumnMerge.resx">
+      <DependentUpon>DgvColumnMerge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\frmAddGroups.resx">
+      <DependentUpon>frmAddGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\frmDataBining.resx">
+      <DependentUpon>frmDataBining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\Grid_V3.resx">
+      <DependentUpon>Grid_V3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\MyGrid_V2.resx">
+      <DependentUpon>MyGrid_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\SpannedDataGridView\DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\IranMap\IranMapControl.resx">
+      <DependentUpon>IranMapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pdf\SaveDataInPdf.resx">
+      <DependentUpon>SaveDataInPdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBox\frmUtProgress.resx">
+      <DependentUpon>frmUtProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report\frmSelectColumn.resx">
+      <DependentUpon>frmSelectColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UCChart.resx">
+      <DependentUpon>UCChart.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UCFilteringMini.resx">
+      <DependentUpon>UCFilteringMini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SelectColumn.resx">
+      <DependentUpon>SelectColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UCFiltering.resx">
+      <DependentUpon>UCFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UCFSingle.resx">
+      <DependentUpon>UCFSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\UCSearchFiltering.resx">
+      <DependentUpon>UCSearchFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpinningProgress\UtSpinningProgress.resx">
+      <DependentUpon>UtSpinningProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Symbol Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Symbol Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Symbol Information 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Symbol Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Symbol Warning .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\title_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\XParrow-Collapse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\XParrow-Expand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SymbolRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Security-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good-or-Tick-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Window Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Window View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy-Small-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XLS-File-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AccDen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iran-Ostan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Second.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REDMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YelowMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S_ArrowCombo_Hor.png" />
+    <None Include="Resources\S_Arrow_Combo.png" />
+    <None Include="Resources\S_Combo.png" />
+    <None Include="Images\LogoImages\TAT-Logo.png" />
+    <None Include="Images\LogoImages\logo center.jpg" />
+    <None Include="Images\LogoImages\TAT.png" />
+    <None Include="Images\BTN\BUSaveExcel.png" />
+    <None Include="Images\BTN\BSSaveExcel.png" />
+    <None Include="Images\LogoImages\SWART_TAT_Welcome.png" />
+    <Content Include="Images\LogoImages\TB.png" />
+    <Content Include="Images\LogoImages\TL-L.jpg" />
+    <Content Include="Images\LogoImages\TL-M.jpg" />
+    <Content Include="Images\LogoImages\TL-R.jpg" />
+    <None Include="Resources\compoDown.png" />
+    <None Include="Resources\combobox.png" />
+    <None Include="Images\Summaries\AVG.png" />
+    <None Include="Images\Summaries\Count.png" />
+    <None Include="Images\Summaries\Max.png" />
+    <None Include="Images\Summaries\Min.png" />
+    <None Include="Images\Summaries\Sum.png" />
+    <Content Include="Resources\DashMngCom48-48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

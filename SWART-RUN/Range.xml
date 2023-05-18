@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <RANGE>
+    <ComName>DEPRANGE</ComName>
+    <NodeText>00-50,000,000</NodeText>
+    <NodeTag />
+  </RANGE>
+  <RANGE>
+    <ComName>DEPRANGE</ComName>
+    <NodeText>00-50,000,001</NodeText>
+    <NodeTag />
+  </RANGE>
+  <RANGE>
+    <ComName>LONRANGE</ComName>
+    <NodeText>00-500,000,000</NodeText>
+    <NodeTag />
+  </RANGE>
+</DocumentElement>

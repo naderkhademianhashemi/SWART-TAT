@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Key_And" xml:space="preserve">
+    <value> and </value>
+  </data>
+  <data name="TABLIX_MEMBER" xml:space="preserve">
+    <value>&lt;TablixMember /&gt;</value>
+  </data>
+  <data name="StructureQueryForReport_CompareOverdueAndCollateralTarhini" xml:space="preserve">
+    <value>select KEY_SelectedColumn   from 
+
+(select 
+ROW_NUMBER() over(order by(SUM(Collateral.Collat_Value_Tarhini))) as Row_Id,
+ SUM(Collateral.Collat_Value_Tarhini) as Collat_Value_Tarhini,sum(Loan_Contract.TotalOverdue)/COUNT(*) as TotalOverdue,
+sum(loan_contract.Approved_Amount)/COUNT(*) as Approved_Amount,
+Organization.Branch_Description,
+dbo.City.City_Name,
+STATe.State_Name,
+Collateral.Contract,
+Contract_Status.Status_Desc,
+Contract_Type.Contract_Type_Description,
+dbo.Economic_Sector.Economic_Sector_Desc,
+dbo.Contract_type_groups.Contract_type_group_Desc,
+dbo.Customer_Group.Customer_Group_Description,
+dbo.Counterparty_Type.Counterparty_Type_Desc,
+dbo.Counterparty.Counterparty,
+dbo.Counterparty.Name,
+dbo.Loan_Contract.Start_Date,
+dbo.Loan_Contract.Maturity_Date
+
+from Collateral inner join
+Loan_Contract on (Loan_Contract.Contract=Collateral.Contract and 
+(Loan_Contract.Status='2' or Loan_Contract.Status='5' or Loan_Contract.Status='6')) left outer join
+Contract_Status on (Loan_Contract.Status = Contract_Status.Status) left outer join
+Organization on Loan_Contract.Branch = Organization.Branch left outer join
+State on Organization.State_Of_Branch=state.State_Id left outer join
+Contract_Type on (Contract_Type.Contract_Type=Loan_Contract.Contract_Type and Contract_Type.Contract_LD='1') left outer join
+Contract_type_groups on Loan_Contract.Contract_Type_Group=Contract_type_groups.Contract_type_group_id left outer join
+Economic_Sector on Loan_Contract.Economic_Sector=Economic_Sector.Economic_Sector left outer join 
+Counterparty on Loan_Contract.Counterparty=counterparty.Counterparty left outer join
+Counterparty_Type on Counterparty.Counterparty_Type=Counterparty_Type.Counterparty_Type left outer join
+Customer_Group on Counterparty.Customer_Group=Customer_Group.Customer_Group LEFT OUTER JOIN
+dbo.City ON dbo.City.State_ID_Fk = dbo.State.State_Id
+
+WHERE_KEY
+
+group by 
+Collateral.Contract,
+Contract_Status.Status_Desc,
+Organization.Branch_Description,
+dbo.City.City_Name,
+STATe.State_Name,
+Contract_Type.Contract_Type_Description,
+dbo.Economic_Sector.Economic_Sector_Desc,
+dbo.Contract_type_groups.Contract_type_group_Desc,
+dbo.Customer_Group.Customer_Group_Description,
+dbo.Counterparty_Type.Counterparty_Type_Desc,
+dbo.Counterparty.Counterparty,
+dbo.Counterparty.Name,
+dbo.Loan_Contract.Start_Date,
+dbo.Loan_Contract.Maturity_Date
+)
+dec
+where row_id between KEY_START_INDEX and KEY_FINISH_INDEX</value>
+    <comment>ساختار گزارش مقایسه کل معوقات با ترهینی</comment>
+  </data>
+  <data name="AliasNameColumnForReport" xml:space="preserve">
+    <value>AliasName</value>
+    <comment>
+			اسم کالمن برای نام فارسی برای ستون های گزارش
+		</comment>
+  </data>
+  <data name="KEY_NameOfGuaranteeReport" xml:space="preserve">
+    <value>VGReport_Historic</value>
+    <comment>کلید گزارش ضمانت نامه</comment>
+  </data>
+  <data name="ExcelFilter" xml:space="preserve">
+    <value>Excel Files|*.xlsx</value>
+  </data>
+  <data name="Key_Mosavi" xml:space="preserve">
+    <value> = </value>
+  </data>
+  <data name="Key_NameOfVLoanByCollactDetailsReport" xml:space="preserve">
+    <value>VLoanByCollactDetails</value>
+    <comment>VLoanByCollactDetails</comment>
+  </data>
+  <data name="TABLIX_CELL" xml:space="preserve">
+    <value>&lt;TablixCell&gt;&lt;CellContents&gt;&lt;Textbox Name="{0}"&gt;&lt;CanGrow&gt;true&lt;/CanGrow&gt;&lt;KeepTogether&gt;true&lt;/KeepTogether&gt;&lt;Paragraphs&gt;&lt;Paragraph&gt;&lt;TextRuns&gt;&lt;TextRun&gt;&lt;Value&gt;=Fields!{1}.Value&lt;/Value&gt;&lt;Style&gt;&lt;FontFamily&gt;Tahoma&lt;/FontFamily&gt;&lt;Color&gt;#4d4d4d&lt;/Color&gt;&lt;/Style&gt;&lt;/TextRun&gt;&lt;/TextRuns&gt;&lt;Style /&gt;&lt;/Paragraph&gt;&lt;/Paragraphs&gt;&lt;rd:DefaultName&gt;{2}&lt;/rd:DefaultName&gt;&lt;Style&gt;&lt;Border&gt;&lt;Color&gt;#e5e5e5&lt;/Color&gt;&lt;Style&gt;Solid&lt;/Style&gt;&lt;/Border&gt;&lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;&lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;&lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;&lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;&lt;/Style&gt;&lt;/Textbox&gt;&lt;/CellContents&gt;&lt;/TablixCell&gt;</value>
+  </data>
+  <data name="KEY_NameOfLoanComOverdueAndCollactVLReport" xml:space="preserve">
+    <value>VCompareOverdueAndCollactTarhiniReport</value>
+    <comment>
+			نام گزارش برای مقایسه مبلغ کل معوقات و ارزش کا وثایق ترهینی برای هر وام
+		</comment>
+  </data>
+  <data name="TABLIX_ROW_HIERARCHY_DEFAULT" xml:space="preserve">
+    <value>&lt;TablixMember&gt;&lt;KeepWithGroup&gt;After&lt;/KeepWithGroup&gt;&lt;/TablixMember&gt;</value>
+  </data>
+  <data name="Key_OneNumber" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DEFAULT_TABLIX_ROW_HIERARCHY" xml:space="preserve">
+    <value>&lt;TablixMember&gt;&lt;KeepWithGroup&gt;After&lt;/KeepWithGroup&gt;&lt;/TablixMember&gt;&lt;TablixMember&gt;&lt;Group Name="Details" /&gt;&lt;/TablixMember&gt;</value>
+  </data>
+  <data name="TEMPLATE_COUNT_COLUMN" xml:space="preserve">
+    <value>&lt;TablixColumn&gt;&lt;Width&gt;{0}in&lt;/Width&gt;&lt;/TablixColumn&gt;</value>
+  </data>
+  <data name="StartIndexForReportShow" xml:space="preserve">
+    <value>1</value>
+    <comment>عدد یک</comment>
+  </data>
+  <data name="MaxSizeOfRowForReport" xml:space="preserve">
+    <value>100000</value>
+    <comment> تعداد رکورد نمایش برای هر بار گزارش مقدار پیشفرض 100,000 می باشد
+		</comment>
+  </data>
+  <data name="ExcelFile" xml:space="preserve">
+    <value>فایل اکسل</value>
+  </data>
+  <data name="KEY_WHERE" xml:space="preserve">
+    <value>WHERE_KEY</value>
+    <comment>WHERE_KEY</comment>
+  </data>
+  <data name="Key_SpaceString" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="KEY_NameOfLoanReport" xml:space="preserve">
+    <value>VLReport_Historic</value>
+    <comment>
+			نام کلید برای گزارشات تسهیلات
+		</comment>
+  </data>
+  <data name="TABLIX_CELL_LABEL" xml:space="preserve">
+    <value>&lt;TablixCell&gt;&lt;CellContents&gt;&lt;Textbox Name="{0}"&gt;&lt;CanGrow&gt;true&lt;/CanGrow&gt;&lt;KeepTogether&gt;true&lt;/KeepTogether&gt;&lt;Paragraphs&gt;&lt;Paragraph&gt;&lt;TextRuns&gt;&lt;TextRun&gt;&lt;Value&gt;{1}&lt;/Value&gt;&lt;Style&gt;&lt;FontFamily&gt;Tahoma&lt;/FontFamily&gt;&lt;FontSize&gt;11pt&lt;/FontSize&gt;&lt;FontWeight&gt;Bold&lt;/FontWeight&gt;&lt;Color&gt;White&lt;/Color&gt;&lt;/Style&gt;&lt;/TextRun&gt;&lt;/TextRuns&gt;&lt;Style /&gt;&lt;/Paragraph&gt;&lt;/Paragraphs&gt;&lt;rd:DefaultName&gt;{2}&lt;/rd:DefaultName&gt;&lt;Style&gt;&lt;Border&gt;&lt;Color&gt;#7292cc&lt;/Color&gt;&lt;Style&gt;Solid&lt;/Style&gt;&lt;/Border&gt;&lt;BackgroundColor&gt;#4c68a2&lt;/BackgroundColor&gt;&lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;&lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;&lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;&lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;&lt;/Style&gt;&lt;/Textbox&gt;&lt;/CellContents&gt;&lt;/TablixCell&gt;</value>
+  </data>
+  <data name="KEY_SelectedColumn" xml:space="preserve">
+    <value>KEY_SelectedColumn</value>
+    <comment>KEY_SelectedColumn</comment>
+  </data>
+  <data name="KEY_FINISH_INDEX" xml:space="preserve">
+    <value>KEY_FINISH_INDEX</value>
+    <comment>KEY_FINISH_INDEX</comment>
+  </data>
+  <data name="Key_OR" xml:space="preserve">
+    <value> OR </value>
+  </data>
+  <data name="strReportTemplate" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition"&gt;
+  &lt;DataSources&gt;
+    &lt;DataSource Name="Risk_Mng_MehrDataSet"&gt;
+      &lt;ConnectionProperties&gt;
+        &lt;DataProvider&gt;System.Data.DataSet&lt;/DataProvider&gt;
+        &lt;ConnectString&gt;/* Local Connection */&lt;/ConnectString&gt;
+      &lt;/ConnectionProperties&gt;
+      &lt;rd:DataSourceID&gt;9bcb0ee7-1d04-4b57-8d26-818890c3e3a5&lt;/rd:DataSourceID&gt;
+    &lt;/DataSource&gt;
+  &lt;/DataSources&gt;
+  &lt;DataSets&gt;
+    &lt;DataSet Name="DataSet1"&gt;
+      &lt;Fields&gt;
+        [TEMPLATE_FIELD]
+      &lt;/Fields&gt;
+      &lt;Query&gt;
+        &lt;DataSourceName&gt;Risk_Mng_MehrDataSet&lt;/DataSourceName&gt;
+        &lt;CommandText&gt;/* Local Query */&lt;/CommandText&gt;
+      &lt;/Query&gt;
+      &lt;rd:DataSetInfo&gt;
+        &lt;rd:DataSetName&gt;Risk_Mng_MehrDataSet&lt;/rd:DataSetName&gt;
+        &lt;rd:SchemaPath&gt;E:\My Work\QueryGenerator\QueryGenerator\Risk_Mng_MehrDataSet.xsd&lt;/rd:SchemaPath&gt;
+        &lt;rd:TableName&gt;View_2&lt;/rd:TableName&gt;
+        &lt;rd:TableAdapterFillMethod&gt;Fill&lt;/rd:TableAdapterFillMethod&gt;
+        &lt;rd:TableAdapterGetDataMethod&gt;GetData&lt;/rd:TableAdapterGetDataMethod&gt;
+        &lt;rd:TableAdapterName&gt;View_2TableAdapter&lt;/rd:TableAdapterName&gt;
+      &lt;/rd:DataSetInfo&gt;
+    &lt;/DataSet&gt;
+  &lt;/DataSets&gt;
+  &lt;Body&gt;
+    &lt;ReportItems&gt;
+      &lt;Tablix Name="Tablix1"&gt;
+        &lt;TablixBody&gt;
+          &lt;TablixColumns&gt;
+            [TEMPLATE_COUNT_COLUMN]
+          &lt;/TablixColumns&gt;
+          &lt;TablixRows&gt;
+            &lt;TablixRow&gt;
+              &lt;Height&gt;0.25in&lt;/Height&gt;
+              &lt;TablixCells&gt;
+                [TABLIX_CELL_LABEL]
+              &lt;/TablixCells&gt;
+            &lt;/TablixRow&gt;
+            &lt;TablixRow&gt;
+              &lt;Height&gt;0.25in&lt;/Height&gt;
+              &lt;TablixCells&gt;
+                [TABLIX_CELL]
+              &lt;/TablixCells&gt;
+            &lt;/TablixRow&gt;
+          &lt;/TablixRows&gt;
+        &lt;/TablixBody&gt;
+        &lt;TablixColumnHierarchy&gt;
+          &lt;TablixMembers&gt;
+            [TABLIX_MEMBER]
+          &lt;/TablixMembers&gt;
+        &lt;/TablixColumnHierarchy&gt;
+        &lt;TablixRowHierarchy&gt;
+          &lt;TablixMembers&gt;
+            [TABLIX_ROW_HIERARCHY]
+			[TABLIX_ROW_HIERARCHY_FILL]
+
+
+
+
+
+          &lt;/TablixMembers&gt;
+        &lt;/TablixRowHierarchy&gt;
+        &lt;DataSetName&gt;DataSet1&lt;/DataSetName&gt;
+        &lt;Height&gt;0.5in&lt;/Height&gt;
+        &lt;Width&gt;1in&lt;/Width&gt;
+        &lt;Style&gt;
+          &lt;Border&gt;
+            &lt;Style&gt;None&lt;/Style&gt;
+          &lt;/Border&gt;
+        &lt;/Style&gt;
+      &lt;/Tablix&gt;
+    &lt;/ReportItems&gt;
+    &lt;Height&gt;2in&lt;/Height&gt;
+    &lt;Style /&gt;
+  &lt;/Body&gt;
+  &lt;Width&gt;6.5in&lt;/Width&gt;
+  &lt;Page&gt;
+    &lt;LeftMargin&gt;1in&lt;/LeftMargin&gt;
+    &lt;RightMargin&gt;1in&lt;/RightMargin&gt;
+    &lt;TopMargin&gt;1in&lt;/TopMargin&gt;
+    &lt;BottomMargin&gt;1in&lt;/BottomMargin&gt;
+    &lt;Style /&gt;
+  &lt;/Page&gt;
+  &lt;rd:ReportID&gt;6f4f8e71-12d1-4cae-b6e1-10292d56f8d8&lt;/rd:ReportID&gt;
+  &lt;rd:ReportUnitType&gt;Inch&lt;/rd:ReportUnitType&gt;
+&lt;/Report&gt;</value>
+  </data>
+  <data name="Key_Counterparty" xml:space="preserve">
+    <value>Counterparty</value>
+    <comment>Counterparty</comment>
+  </data>
+  <data name="KEY_START_INDEX" xml:space="preserve">
+    <value>KEY_START_INDEX</value>
+    <comment>KEY_START_INDEX</comment>
+  </data>
+  <data name="ParantezBaz" xml:space="preserve">
+    <value>(</value>
+    <comment>پرانتز باز</comment>
+  </data>
+  <data name="KEY_NameOfDepositReport" xml:space="preserve">
+    <value>VDepositReport_Historic</value>
+    <comment>کلید گزارش سپرده</comment>
+  </data>
+  <data name="Key_Parantez_Baste" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="TEMPLATE_FIELD" xml:space="preserve">
+    <value>&lt;Field Name="{0}"&gt;&lt;DataField&gt;{1}&lt;/DataField&gt;&lt;rd:TypeName&gt;{2}&lt;/rd:TypeName&gt;&lt;/Field&gt;</value>
+  </data>
+  <data name="TABLIX_ROW_HIERARCHY_FILL_DEFAULT" xml:space="preserve">
+    <value>&lt;TablixMember&gt;&lt;Group Name="Details" /&gt;&lt;/TablixMember&gt;</value>
+  </data>
+  <data name="NameColumnForReport" xml:space="preserve">
+    <value>NameColumn</value>
+    <comment>
+			نام کالمن برای نمایش گزارش
+		</comment>
+  </data>
+</root>

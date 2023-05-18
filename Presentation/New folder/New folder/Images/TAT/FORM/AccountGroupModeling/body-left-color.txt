@@ -1,0 +1,11 @@
+
+
+
+  body-left: 247 233 187
+
+  body-left-2: 253 243 211
+
+
+
+
+  right-back-hover: 244 233 194
