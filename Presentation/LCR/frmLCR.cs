@@ -116,5 +116,10 @@ namespace Presentation.LCR
         {
             FillGridLevel1();
         }
+
+        private void cbSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

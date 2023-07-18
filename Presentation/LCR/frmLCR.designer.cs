@@ -35,6 +35,13 @@ namespace Presentation.LCR
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -56,13 +63,6 @@ namespace Presentation.LCR
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -88,24 +88,20 @@ namespace Presentation.LCR
             this.txtSheet = new System.Windows.Forms.TextBox();
             this.txtFileExcel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbSave = new System.Windows.Forms.Button();
             this.cbSelectExcel = new System.Windows.Forms.Button();
             this.dgvImportLevel1 = new System.Windows.Forms.DataGridView();
-            this.uiTabPage_saham = new Janus.Windows.UI.Tab.UITabPage();
             this.splitContainer_saham = new System.Windows.Forms.SplitContainer();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox_saham = new System.Windows.Forms.TextBox();
             this.cButtonSave_saham = new System.Windows.Forms.Button();
             this.cButton_fileSelect_saham = new System.Windows.Forms.Button();
             this.dataGridView_saham = new System.Windows.Forms.DataGridView();
-            this.uiTabPage5 = new Janus.Windows.UI.Tab.UITabPage();
             this.splitContainer_50company = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
             this.cButton_save_50company = new System.Windows.Forms.Button();
             this.textBox_50comany = new System.Windows.Forms.TextBox();
             this.cButton_file_50company = new System.Windows.Forms.Button();
             this.dataGridView_50company = new System.Windows.Forms.DataGridView();
-            this.uiTabPage3 = new Janus.Windows.UI.Tab.UITabPage();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.cButton_saveTarhini = new System.Windows.Forms.Button();
             this.cButton_selectExcelTarhini = new System.Windows.Forms.Button();
@@ -185,19 +181,16 @@ namespace Presentation.LCR
             this.splitContainer9.Panel2.SuspendLayout();
             this.splitContainer9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImportLevel1)).BeginInit();
-            this.uiTabPage_saham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_saham)).BeginInit();
             this.splitContainer_saham.Panel1.SuspendLayout();
             this.splitContainer_saham.Panel2.SuspendLayout();
             this.splitContainer_saham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_saham)).BeginInit();
-            this.uiTabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_50company)).BeginInit();
             this.splitContainer_50company.Panel1.SuspendLayout();
             this.splitContainer_50company.Panel2.SuspendLayout();
             this.splitContainer_50company.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_50company)).BeginInit();
-            this.uiTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
             this.splitContainer5.Panel1.SuspendLayout();
             this.splitContainer5.Panel2.SuspendLayout();
@@ -407,10 +400,7 @@ namespace Presentation.LCR
             this.uiTab_sub_voroud.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTab_sub_voroud.TabIndex = 0;
             this.uiTab_sub_voroud.TabPages.AddRange(new Janus.Windows.UI.Tab.UITabPage[] {
-            this.uiTabPage4,
-            this.uiTabPage_saham,
-            this.uiTabPage5,
-            this.uiTabPage3});
+            this.uiTabPage4});
             this.uiTab_sub_voroud.UseThemes = false;
             this.uiTab_sub_voroud.SelectedTabChanged += new Janus.Windows.UI.Tab.TabEventHandler(this.uiTab_sub_voroud_SelectedTabChanged);
             // 
@@ -438,7 +428,6 @@ namespace Presentation.LCR
             this.splitContainer9.Panel1.Controls.Add(this.txtSheet);
             this.splitContainer9.Panel1.Controls.Add(this.txtFileExcel);
             this.splitContainer9.Panel1.Controls.Add(this.label7);
-            this.splitContainer9.Panel1.Controls.Add(this.cbSave);
             this.splitContainer9.Panel1.Controls.Add(this.cbSelectExcel);
             this.splitContainer9.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
@@ -495,16 +484,6 @@ namespace Presentation.LCR
             this.label7.TabIndex = 160;
             this.label7.Text = "ورود و بروز سانی داده های اوراق بهادار";
             // 
-            // cbSave
-            // 
-            this.cbSave.ForeColor = System.Drawing.Color.Black;
-            this.cbSave.Location = new System.Drawing.Point(59, 14);
-            this.cbSave.Margin = new System.Windows.Forms.Padding(32, 40, 32, 40);
-            this.cbSave.Name = "cbSave";
-            this.cbSave.Size = new System.Drawing.Size(184, 45);
-            this.cbSave.TabIndex = 159;
-            this.cbSave.Text = "ذخیره تغییرات";
-            // 
             // cbSelectExcel
             // 
             this.cbSelectExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -551,16 +530,6 @@ namespace Presentation.LCR
             this.dgvImportLevel1.TabIndex = 9;
             this.dgvImportLevel1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvImportLevel1_CellContentClick);
             // 
-            // uiTabPage_saham
-            // 
-            this.uiTabPage_saham.Controls.Add(this.splitContainer_saham);
-            this.uiTabPage_saham.Location = new System.Drawing.Point(1, 35);
-            this.uiTabPage_saham.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.uiTabPage_saham.Name = "uiTabPage_saham";
-            this.uiTabPage_saham.Size = new System.Drawing.Size(1569, 278);
-            this.uiTabPage_saham.TabStop = true;
-            this.uiTabPage_saham.Text = "سهام";
-            // 
             // splitContainer_saham
             // 
             this.splitContainer_saham.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -575,12 +544,12 @@ namespace Presentation.LCR
             this.splitContainer_saham.Panel1.Controls.Add(this.textBox_saham);
             this.splitContainer_saham.Panel1.Controls.Add(this.cButtonSave_saham);
             this.splitContainer_saham.Panel1.Controls.Add(this.cButton_fileSelect_saham);
-            this.splitContainer_saham.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer_saham.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
             // splitContainer_saham.Panel2
             // 
             this.splitContainer_saham.Panel2.Controls.Add(this.dataGridView_saham);
-            this.splitContainer_saham.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer_saham.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer_saham.Size = new System.Drawing.Size(1569, 278);
             this.splitContainer_saham.SplitterDistance = 77;
             this.splitContainer_saham.TabIndex = 0;
@@ -593,7 +562,7 @@ namespace Presentation.LCR
             this.label18.Location = new System.Drawing.Point(1302, 37);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(197, 27);
+            this.label18.Size = new System.Drawing.Size(171, 16);
             this.label18.TabIndex = 163;
             this.label18.Text = "ورود و بروز سانی داده های سهام";
             // 
@@ -605,7 +574,7 @@ namespace Presentation.LCR
             this.textBox_saham.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_saham.Name = "textBox_saham";
             this.textBox_saham.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_saham.Size = new System.Drawing.Size(512, 33);
+            this.textBox_saham.Size = new System.Drawing.Size(512, 22);
             this.textBox_saham.TabIndex = 162;
             // 
             // cButtonSave_saham
@@ -631,17 +600,17 @@ namespace Presentation.LCR
             // 
             // dataGridView_saham
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView_saham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView_saham.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView_saham.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_saham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_saham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridView_saham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_saham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_saham.Location = new System.Drawing.Point(0, 0);
@@ -650,16 +619,6 @@ namespace Presentation.LCR
             this.dataGridView_saham.RowHeadersWidth = 51;
             this.dataGridView_saham.Size = new System.Drawing.Size(1569, 197);
             this.dataGridView_saham.TabIndex = 0;
-            // 
-            // uiTabPage5
-            // 
-            this.uiTabPage5.Controls.Add(this.splitContainer_50company);
-            this.uiTabPage5.Location = new System.Drawing.Point(1, 35);
-            this.uiTabPage5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.uiTabPage5.Name = "uiTabPage5";
-            this.uiTabPage5.Size = new System.Drawing.Size(1569, 278);
-            this.uiTabPage5.TabStop = true;
-            this.uiTabPage5.Text = "پنجاه شرکت برتر بورس";
             // 
             // splitContainer_50company
             // 
@@ -675,12 +634,12 @@ namespace Presentation.LCR
             this.splitContainer_50company.Panel1.Controls.Add(this.cButton_save_50company);
             this.splitContainer_50company.Panel1.Controls.Add(this.textBox_50comany);
             this.splitContainer_50company.Panel1.Controls.Add(this.cButton_file_50company);
-            this.splitContainer_50company.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer_50company.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
             // splitContainer_50company.Panel2
             // 
             this.splitContainer_50company.Panel2.Controls.Add(this.dataGridView_50company);
-            this.splitContainer_50company.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer_50company.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer_50company.Size = new System.Drawing.Size(1569, 278);
             this.splitContainer_50company.SplitterDistance = 73;
             this.splitContainer_50company.TabIndex = 0;
@@ -693,7 +652,7 @@ namespace Presentation.LCR
             this.label2.Location = new System.Drawing.Point(1194, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(307, 27);
+            this.label2.Size = new System.Drawing.Size(267, 16);
             this.label2.TabIndex = 164;
             this.label2.Text = "ورود و بروز سانی داده های  پنجاه شرکت برتر بورس";
             // 
@@ -715,7 +674,7 @@ namespace Presentation.LCR
             this.textBox_50comany.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_50comany.Name = "textBox_50comany";
             this.textBox_50comany.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox_50comany.Size = new System.Drawing.Size(516, 33);
+            this.textBox_50comany.Size = new System.Drawing.Size(516, 22);
             this.textBox_50comany.TabIndex = 162;
             // 
             // cButton_file_50company
@@ -731,17 +690,17 @@ namespace Presentation.LCR
             // 
             // dataGridView_50company
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView_50company.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView_50company.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridView_50company.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_50company.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_50company.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridView_50company.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_50company.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_50company.Location = new System.Drawing.Point(0, 0);
@@ -750,16 +709,6 @@ namespace Presentation.LCR
             this.dataGridView_50company.RowHeadersWidth = 51;
             this.dataGridView_50company.Size = new System.Drawing.Size(1569, 201);
             this.dataGridView_50company.TabIndex = 0;
-            // 
-            // uiTabPage3
-            // 
-            this.uiTabPage3.Controls.Add(this.splitContainer5);
-            this.uiTabPage3.Location = new System.Drawing.Point(1, 35);
-            this.uiTabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.uiTabPage3.Name = "uiTabPage3";
-            this.uiTabPage3.Size = new System.Drawing.Size(1569, 278);
-            this.uiTabPage3.TabStop = true;
-            this.uiTabPage3.Text = "کسر مقدار ترهینی اوراق";
             // 
             // splitContainer5
             // 
@@ -775,12 +724,12 @@ namespace Presentation.LCR
             this.splitContainer5.Panel1.Controls.Add(this.cButton_selectExcelTarhini);
             this.splitContainer5.Panel1.Controls.Add(this.label4);
             this.splitContainer5.Panel1.Controls.Add(this.textBox1);
-            this.splitContainer5.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer5.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.dataGridView_Xl_Tarhini);
-            this.splitContainer5.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer5.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer5.Size = new System.Drawing.Size(1569, 278);
             this.splitContainer5.SplitterDistance = 83;
             this.splitContainer5.TabIndex = 0;
@@ -814,7 +763,7 @@ namespace Presentation.LCR
             this.label4.Location = new System.Drawing.Point(1178, 41);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(213, 27);
+            this.label4.Size = new System.Drawing.Size(185, 16);
             this.label4.TabIndex = 165;
             this.label4.Text = "ورود و بروز سانی داده های  ترهینی";
             // 
@@ -826,27 +775,27 @@ namespace Presentation.LCR
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(511, 33);
+            this.textBox1.Size = new System.Drawing.Size(511, 22);
             this.textBox1.TabIndex = 162;
             // 
             // dataGridView_Xl_Tarhini
             // 
             this.dataGridView_Xl_Tarhini.AllowUserToAddRows = false;
             this.dataGridView_Xl_Tarhini.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_Xl_Tarhini.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_Xl_Tarhini.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridView_Xl_Tarhini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView_Xl_Tarhini.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Xl_Tarhini.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Xl_Tarhini.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Xl_Tarhini.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridView_Xl_Tarhini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Xl_Tarhini.ContextMenuStrip = this.ctxExcel;
             this.dataGridView_Xl_Tarhini.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -856,8 +805,8 @@ namespace Presentation.LCR
             this.dataGridView_Xl_Tarhini.Name = "dataGridView_Xl_Tarhini";
             this.dataGridView_Xl_Tarhini.RowHeadersVisible = false;
             this.dataGridView_Xl_Tarhini.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_Xl_Tarhini.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_Xl_Tarhini.RowsDefaultCellStyle = dataGridViewCellStyle31;
             this.dataGridView_Xl_Tarhini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView_Xl_Tarhini.Size = new System.Drawing.Size(1569, 191);
             this.dataGridView_Xl_Tarhini.TabIndex = 10;
@@ -904,20 +853,20 @@ namespace Presentation.LCR
             // 
             this.dgvLevel1.AllowUserToAddRows = false;
             this.dgvLevel1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvLevel1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvLevel1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvLevel1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLevel1.BackgroundColor = System.Drawing.Color.White;
             this.dgvLevel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLevel1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLevel1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLevel1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLevel1.ContextMenuStrip = this.ctxExcel;
             this.dgvLevel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -927,8 +876,8 @@ namespace Presentation.LCR
             this.dgvLevel1.Name = "dgvLevel1";
             this.dgvLevel1.RowHeadersVisible = false;
             this.dgvLevel1.RowHeadersWidth = 51;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvLevel1.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvLevel1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvLevel1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvLevel1.Size = new System.Drawing.Size(1571, 285);
             this.dgvLevel1.TabIndex = 6;
@@ -939,20 +888,20 @@ namespace Presentation.LCR
             // 
             this.dgvLevel1Detail.AllowUserToAddRows = false;
             this.dgvLevel1Detail.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvLevel1Detail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvLevel1Detail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvLevel1Detail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLevel1Detail.BackgroundColor = System.Drawing.Color.White;
             this.dgvLevel1Detail.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLevel1Detail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLevel1Detail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvLevel1Detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLevel1Detail.ContextMenuStrip = this.ctxExcel;
             this.dgvLevel1Detail.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -963,8 +912,8 @@ namespace Presentation.LCR
             this.dgvLevel1Detail.ReadOnly = true;
             this.dgvLevel1Detail.RowHeadersVisible = false;
             this.dgvLevel1Detail.RowHeadersWidth = 51;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvLevel1Detail.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvLevel1Detail.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvLevel1Detail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLevel1Detail.Size = new System.Drawing.Size(1571, 25);
             this.dgvLevel1Detail.TabIndex = 0;
@@ -1012,20 +961,20 @@ namespace Presentation.LCR
             // 
             this.dataGridView_asset_arzi.AllowUserToAddRows = false;
             this.dataGridView_asset_arzi.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_asset_arzi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_asset_arzi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView_asset_arzi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView_asset_arzi.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_asset_arzi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_asset_arzi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_asset_arzi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView_asset_arzi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_asset_arzi.ContextMenuStrip = this.ctxExcel;
             this.dataGridView_asset_arzi.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1035,8 +984,8 @@ namespace Presentation.LCR
             this.dataGridView_asset_arzi.Name = "dataGridView_asset_arzi";
             this.dataGridView_asset_arzi.RowHeadersVisible = false;
             this.dataGridView_asset_arzi.RowHeadersWidth = 51;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_asset_arzi.RowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_asset_arzi.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView_asset_arzi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView_asset_arzi.Size = new System.Drawing.Size(1571, 314);
             this.dataGridView_asset_arzi.TabIndex = 8;
@@ -1061,20 +1010,20 @@ namespace Presentation.LCR
             // 
             this.dataGridView_flow_riali.AllowUserToAddRows = false;
             this.dataGridView_flow_riali.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_flow_riali.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_flow_riali.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView_flow_riali.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView_flow_riali.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_flow_riali.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_flow_riali.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_flow_riali.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView_flow_riali.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_flow_riali.ContextMenuStrip = this.ctxExcel;
             this.dataGridView_flow_riali.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1084,8 +1033,8 @@ namespace Presentation.LCR
             this.dataGridView_flow_riali.Name = "dataGridView_flow_riali";
             this.dataGridView_flow_riali.RowHeadersVisible = false;
             this.dataGridView_flow_riali.RowHeadersWidth = 51;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_flow_riali.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_flow_riali.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView_flow_riali.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView_flow_riali.Size = new System.Drawing.Size(1571, 314);
             this.dataGridView_flow_riali.TabIndex = 8;
@@ -1110,20 +1059,20 @@ namespace Presentation.LCR
             // 
             this.dataGridView_cash_arzi.AllowUserToAddRows = false;
             this.dataGridView_cash_arzi.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_cash_arzi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_cash_arzi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView_cash_arzi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView_cash_arzi.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_cash_arzi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_cash_arzi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_cash_arzi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView_cash_arzi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_cash_arzi.ContextMenuStrip = this.ctxExcel;
             this.dataGridView_cash_arzi.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1133,8 +1082,8 @@ namespace Presentation.LCR
             this.dataGridView_cash_arzi.Name = "dataGridView_cash_arzi";
             this.dataGridView_cash_arzi.RowHeadersVisible = false;
             this.dataGridView_cash_arzi.RowHeadersWidth = 51;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView_cash_arzi.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView_cash_arzi.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridView_cash_arzi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView_cash_arzi.Size = new System.Drawing.Size(1571, 314);
             this.dataGridView_cash_arzi.TabIndex = 8;
@@ -1159,20 +1108,20 @@ namespace Presentation.LCR
             // 
             this.dgv_cash_arzi_input.AllowUserToAddRows = false;
             this.dgv_cash_arzi_input.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgv_cash_arzi_input.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgv_cash_arzi_input.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dgv_cash_arzi_input.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_cash_arzi_input.BackgroundColor = System.Drawing.Color.White;
             this.dgv_cash_arzi_input.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_cash_arzi_input.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_cash_arzi_input.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgv_cash_arzi_input.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_cash_arzi_input.ContextMenuStrip = this.ctxExcel;
             this.dgv_cash_arzi_input.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1182,8 +1131,8 @@ namespace Presentation.LCR
             this.dgv_cash_arzi_input.Name = "dgv_cash_arzi_input";
             this.dgv_cash_arzi_input.RowHeadersVisible = false;
             this.dgv_cash_arzi_input.RowHeadersWidth = 51;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgv_cash_arzi_input.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgv_cash_arzi_input.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dgv_cash_arzi_input.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgv_cash_arzi_input.Size = new System.Drawing.Size(1571, 314);
             this.dgv_cash_arzi_input.TabIndex = 9;
@@ -1208,20 +1157,20 @@ namespace Presentation.LCR
             // 
             this.dataGridViewCalcLcr.AllowUserToAddRows = false;
             this.dataGridViewCalcLcr.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridViewCalcLcr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridViewCalcLcr.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewCalcLcr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewCalcLcr.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewCalcLcr.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCalcLcr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCalcLcr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewCalcLcr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCalcLcr.ContextMenuStrip = this.ctxExcel;
             this.dataGridViewCalcLcr.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1231,8 +1180,8 @@ namespace Presentation.LCR
             this.dataGridViewCalcLcr.Name = "dataGridViewCalcLcr";
             this.dataGridViewCalcLcr.RowHeadersVisible = false;
             this.dataGridViewCalcLcr.RowHeadersWidth = 51;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridViewCalcLcr.RowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("B Nazanin", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridViewCalcLcr.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewCalcLcr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridViewCalcLcr.Size = new System.Drawing.Size(1571, 314);
             this.dataGridViewCalcLcr.TabIndex = 9;
@@ -1920,21 +1869,18 @@ namespace Presentation.LCR
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
             this.splitContainer9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvImportLevel1)).EndInit();
-            this.uiTabPage_saham.ResumeLayout(false);
             this.splitContainer_saham.Panel1.ResumeLayout(false);
             this.splitContainer_saham.Panel1.PerformLayout();
             this.splitContainer_saham.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_saham)).EndInit();
             this.splitContainer_saham.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_saham)).EndInit();
-            this.uiTabPage5.ResumeLayout(false);
             this.splitContainer_50company.Panel1.ResumeLayout(false);
             this.splitContainer_50company.Panel1.PerformLayout();
             this.splitContainer_50company.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_50company)).EndInit();
             this.splitContainer_50company.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_50company)).EndInit();
-            this.uiTabPage3.ResumeLayout(false);
             this.splitContainer5.Panel1.ResumeLayout(false);
             this.splitContainer5.Panel1.PerformLayout();
             this.splitContainer5.Panel2.ResumeLayout(false);
@@ -2067,12 +2013,9 @@ namespace Presentation.LCR
         private System.Windows.Forms.DataGridView dgvLevel1;
         private Janus.Windows.UI.Tab.UITabPage uiTabPage_vorod_data;
         private Janus.Windows.UI.Tab.UITab uiTab_sub_voroud;
-        private Janus.Windows.UI.Tab.UITabPage uiTabPage_saham;
         private Janus.Windows.UI.Tab.UITabPage uiTabPage4;
-        private Janus.Windows.UI.Tab.UITabPage uiTabPage5;
         private System.Windows.Forms.SplitContainer splitContainer9;
         private Button cbSelectExcel;
-        private Button cbSave;
         private System.Windows.Forms.TextBox txtFileExcel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvImportLevel1;
@@ -2097,7 +2040,6 @@ namespace Presentation.LCR
         private System.Windows.Forms.DataGridView dataGridView_cash_arzi;
         private Janus.Windows.UI.Tab.UITabPage uiTabPage11;
         private System.Windows.Forms.DataGridView dataGridViewCalcLcr;
-        private Janus.Windows.UI.Tab.UITabPage uiTabPage3;
         private System.Windows.Forms.SplitContainer splitContainer5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
